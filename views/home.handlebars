@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <main>
+      {{#each blogposts}}
+          <div class="card mb-3" style="width: 100%;">
+            <div class="card-header">
+              <a href="/post/{{id}}">{{title}}</a>
+            </div>
+            <div class="card-footer timestamp">
+              Posted on {{date_created}}
+            </div>
+          </div>
+      {{/each}}
+      </main>
+    </div>
+  </div>
+</div>

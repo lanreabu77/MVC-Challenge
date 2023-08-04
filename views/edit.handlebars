@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <h1>{{#if post}}Edit Post{{else}}Create a New Post{{/if}}</h1>
+      <form id="postForm" method="POST" action="/edit">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" class="form-control" value="{{post.title}}" required>
+          <input type="hidden" id="postId" name="postId" value="{{#if post}}{{post.id}}{{/if}}">
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea id="content" name="content" class="form-control" rows="10" required>{{post.content}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">{{#if post}}Update Post{{else}}Create Post{{/if}}</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/js/edit.js"></script>

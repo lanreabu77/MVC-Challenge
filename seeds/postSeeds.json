@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Functional Programming ",
+      "content": "Functional programming is a programming paradigm in which we try to bind everything in pure mathematical functions style. It is a declarative type of programming style. Its main focus is on “what to solve” in contrast to an imperative style where the main focus is “how to solve”..",
+      "user_id": 1
+    },
+    {
+      "title": "How well to learn Machine Learning",
+      "content": "Machine learning combines several intermediate to advanced mathematical concepts, such as linear algebra, probability, and statistics. Your in-depth knowledge of these critical concepts should prepare you to learn even more about machine learning.",
+      "user_id": 2
+    },
+
+    {
+      "title": "Best Practices of Tailwind framework",
+      "content": "Tailwind CSS is a utility-first open-source CSS framework. Unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.",
+      "user_id": 2
+    }
+  ]
+  

@@ -1,0 +1,29 @@
+[
+    {
+      "content": "The content is very educative",
+      "user_id": 2,
+      "blog_id": 1
+    },
+   
+    {
+      "content": "can you recommend any resources for machine learning ",
+      "user_id": 2,
+      "blog_id": 3
+    },
+    {
+      "content": "Tailwind is a very popular and easy to learn framework",
+      "user_id": 1,
+      "blog_id": 4
+    },
+    {
+      "content": "The concept of functional programming is best explained here thank you",
+      "user_id": 2,
+      "blog_id": 1
+    },
+    {
+      "content": "The concept is well explained and fast api has become easier now for me",
+      "user_id": 1,
+      "blog_id": 2
+    }
+  ]
+  

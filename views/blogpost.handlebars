@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header blog-title">
+            {{blogPost.title}}
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                {{blogPost.content}}
+            </p>
+        </div>
+        <div class="card-footer timestamp">
+        Posted by {{blogPost.user.username}} on {{blogPost.date_created}}
+        </div>
+    </div>
+    {{#if logged_in}}
+        <form action="/post/{{blogPost.id}}/comments/new" method="POST">
+            <div class="form-group">
+                <label for="comment">Leave a Comment:</label>
+                <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+            </div>
+            <input type="hidden" name="blog_id" value="{{blogPost.id}}">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    {{/if}}
+    {{#each blogPost.comments}}
+    <div class="comment-card mt-4">
+        <div class="card-header">
+            Commented by {{this.user.username}} on {{this.date_created}}
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{this.content}}</p>
+        </div>
+    </div>
+{{/each}}
+</div>
