@@ -1,3 +1,7 @@
+# Tech Blog
+
+Welcome to a CMS-style blog site tailored for developers to share their blog posts and engage in discussions on each other's posts. The site adheres to the Model-View-Controller (MVC) architectural pattern, employing Handlebars.js as the templating language, Sequelize as the ORM for database operations, and the express-session npm package for secure authentication. Drawing inspiration from Wordpress, the site aims to provide a user-friendly and familiar experience. Furthermore, it is hosted on the Heroku platform, ensuring accessibility and smooth performance.
+
 # Functionality
 
 The Tech Blog application offers the following functionalities:
